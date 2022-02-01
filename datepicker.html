@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="date-picker">
+        <div class="selected-date"></div>
+
+        <div class="dates">
+            <div class="month">
+                <div class="arrows prev">&lt;</div>
+                <div class="mth"></div>
+                <div class="arrows next">&gt;</div>
+            </div>
+            <div class="week-days">
+                <div class="day-static">ش</div>
+                <div class="day-static">ی</div>
+                <div class="day-static">د</div>
+                <div class="day-static">س</div>
+                <div class="day-static">چ</div>
+                <div class="day-static">پ</div>
+                <div class="day-static">ج</div>
+            </div>
+            <div class="days">
+
+            </div>
+            <div class="today" onclick="gotoday()">برو به امروز</div>
+        </div>
+     
+    </div>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/moment-jalali.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'iranyekan';
+    src: url(../fonts/eot/iranyekanwebmediumfanum.eot) format('eot'),
+    url(../fonts/ttf/iranyekanwebmediumfanum.ttf) format('ttf'),
+    url(../fonts/woff/iranyekanwebmediumfanum.woff) format('woff');
+}
+body {
+    background-color: #f68a1f;
+    font-family: 'iranyekan' !important;
+}
+
+.date-picker {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    background-color: #FFF;
+    margin: 50px auto;
+    cursor: pointer;
+    user-select: none;
+    direction: rtl;
+}
+
+.date-picker .selected-date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size:20px;
+}
+
+.date-picker .dates {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+}
+
+.date-picker .dates.active {
+    display: block;
+}
+
+.date-picker .dates .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #CCC;
+}
+
+.date-picker .dates .month .arrows {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-picker .dates .month .arrows:active {
+    background-color: aquamarine;
+}
+
+.date-picker .dates .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 200px;
+}
+
+.date-picker .dates .days .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-picker .dates .days .day:hover {
+    background-color: aquamarine;
+}
+.week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    background: #ffe9cf;
+    padding: 10px;
+}
+.disabled{
+    user-select: none;
+    visibility: hidden;
+
+}
+.selected {
+    background: #ffae5f;
+    border-radius: 5px;
+    color: #FFF;
+}
+.today{
+    width: 100%;
+    text-align: center;
+    background-color: #ffebd7;
+    padding: 10px 0;
+}
